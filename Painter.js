@@ -1,3 +1,6 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 var x = [
     66.021,
     84.884,
@@ -770,9 +773,7 @@ var y=[
     504.37,
     510.91
 ]
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
+
 var canv = document.getElementById("C1");
 var ctx = canv.getContext('2d');
 
