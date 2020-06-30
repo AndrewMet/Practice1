@@ -777,8 +777,11 @@ var y=[
 var canv2 = document.getElementById("C2");
 var ctx2 = canv2.getContext('2d');
 
+
+
+
 //ctx.moveTo(x[0],y[0]);
-async function draw() {
+async function drawbezu() {
     for(let i=1;i<x.length-2;i+=3)
     {
         await sleep(40);
@@ -790,5 +793,5 @@ async function draw() {
         ctx2.stroke();
     }
 }
-draw();
+
 

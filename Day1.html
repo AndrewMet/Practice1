@@ -4,12 +4,22 @@
     <link href="my.css" rel="stylesheet" type="text/css">
     <script src="Painter.js" defer></script>
     <script src="bezu.js" defer></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <title>Практика, день 1</title>
 </head>
 <body>
 <h1>Метасов Андрей</h1>
 <img src="https://cdn.glitch.com/5bd98769-3f51-40ca-84a2-aa4fea864fde%2FMetasov.png?v=1593522703279">
-<summary>Задание 1.2 <details><div align="center"><canvas id="C1" width="512" height="512"></canvas></div></details></summary>
-<summary>Задание 1.3 <details><div align="center"><canvas id="C2" width="512" height="512"></canvas></div></details></summary>
+<summary>Задание 1.2 <details onclick="draw()"><div align="center"><canvas id="C1" width="512" height="512"></canvas></div></details></summary>
+<summary>Задание 1.3
+    <details onclick="drawbezu()">
+        <p>При отрисовке этого canvas-a были использованы кубические кривые Безье. Такая кривая может быть описана формулой
+            $$x = (1-t)^2x_1 + 2(1-t)tx_2 + t^2x_3,$$ $$y = (1-t)^2y_1 + 2(1-t)ty_2 + t^2y_3,$$
+            где \((x,y)\) - координаты очередной точки кривой, \((x_i,y_i)\) - координаты \(i\)-й опорной точки, \(t\) - параметр, проходящий значения из диапазона \([0;1].\)
+            Опорные точки берутся из множества точек контура.
+        </p>
+        <div align="center"><canvas id="C2" width="512" height="512"></canvas></div>
+    </details>
+</summary>
 </body>
 </html>

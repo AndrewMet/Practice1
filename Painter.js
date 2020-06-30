@@ -789,5 +789,5 @@ async function draw() {
         ctx.stroke();
     }
 }
-draw();
+
 
